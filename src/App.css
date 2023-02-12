@@ -1,0 +1,55 @@
+.App {
+    background: #BDCDD6;
+}
+
+header {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+header button {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    font-weight: bold;
+    padding: 0 .7rem;
+    color: #ededed;
+}
+
+header button i {
+    font-size: 2rem;
+}
+
+.box__users {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    background: #8eafc4;
+    height: calc(100vh - 114px);
+    padding: 1rem;
+    overflow-y: scroll;
+
+    display: grid;
+    gap: 1rem;
+}
+
+.box__users::-webkit-scrollbar {
+    display: none;
+}
+
+@media (min-width:800px) {
+    .box__users {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+}

@@ -1,0 +1,42 @@
+.user_box {
+    height: 200px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0;
+    background: #ededed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border: 3px solid rgba(67, 67, 67, 0.416);
+}
+
+.user_box h3 {
+    text-transform: capitalize;
+}
+
+.user_box p {
+    color: rgb(0 0 0 / .5)
+}
+
+.content_box,
+.icons {
+    display: grid;
+    gap: 1rem;
+}
+
+.icons {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.icons i:nth-child(2) {
+    color: rgb(236, 6, 6);
+}
+
+@media (min-width:800px) {
+    .user_box {
+        width: 100%;
+        margin: auto;
+    }
+}
